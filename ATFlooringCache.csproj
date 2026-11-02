@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>ATFlooringCache</AssemblyName>
+    <RootNamespace>ATFlooringCache</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x64</PlatformTarget>
+    <GamePath Condition="'$(GamePath)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley</GamePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="reference\**\*.cs" />
+    <Compile Remove="reference/**/*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="StardewModdingAPI">
+      <HintPath>$(GamePath)\StardewModdingAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Stardew Valley">
+      <HintPath>$(GamePath)\Stardew Valley.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(GamePath)\MonoGame.Framework.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="StardewValley.GameData">
+      <HintPath>$(GamePath)\StardewValley.GameData.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="xTile">
+      <HintPath>$(GamePath)\xTile.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SMAPI.Toolkit.CoreInterfaces">
+      <HintPath>$(GamePath)\smapi-internal\SMAPI.Toolkit.CoreInterfaces.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SMAPI.Toolkit">
+      <HintPath>$(GamePath)\smapi-internal\SMAPI.Toolkit.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(GamePath)\smapi-internal\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

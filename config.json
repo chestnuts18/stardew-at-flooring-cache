@@ -1,0 +1,11 @@
+{
+  "Enabled": true,
+  "CachesPerTick": 8,
+  "MaxCacheEntries": 1024,
+  "CacheBudgetMs": 4,
+  "PrewarmOnLocationChange": true,
+  "LogStats": true,
+  "StatsIntervalSeconds": 10,
+  "EnableObjectCache": true,
+  "MaxObjectCacheEntries": 2048
+}

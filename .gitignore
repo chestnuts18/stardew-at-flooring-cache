@@ -1,0 +1,7 @@
+bin/
+obj/
+reference/
+.vs/
+*.user
+CLAUDE.md
+Directory.Build.props

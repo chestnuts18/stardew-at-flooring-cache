@@ -1,0 +1,15 @@
+{
+  "Name": "AT Flooring Cache (Prototype)",
+  "Author": "chestnuts18",
+  "Version": "0.1.0",
+  "Description": "Caches Alternative Textures flooring into per-tile sprites to reduce per-frame draw calls. Prototype for testing; does not change gameplay.",
+  "UniqueID": "Claude.ATFlooringCache",
+  "EntryDll": "ATFlooringCache.dll",
+  "MinimumApiVersion": "4.0.0",
+  "Dependencies": [
+    {
+      "UniqueID": "PeacefulEnd.AlternativeTextures",
+      "IsRequired": true
+    }
+  ]
+}
